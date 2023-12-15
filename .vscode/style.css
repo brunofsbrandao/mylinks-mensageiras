@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*
+  background-image: url(./assets/background-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+  background: url(./assets/bg-desktop.png) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/* links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.446);
+  border: 1px solid rgba(66, 176, 10, 0.5);
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: backgroud 0.2s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+  background: rgba(49, 100, 48, 0.219);
+  border: 1.5px solid rgb(87, 154, 87);
+}
+
+#footer img {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-left: 100px;
+
+  padding: 24px 0;
+  width: 112px;
+}
